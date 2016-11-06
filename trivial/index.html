@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> Trivial </title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="author" content="David Rodríguez Marco" />
+<link rel="shortcut icon" href="./img/favicon.jpg" />
+<link rel="stylesheet" type="text/css" href="./estilos/estilo_inicio.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="./estilos/estilo_layout.css" media="screen"/>
+<script>
+var i=0;
+var j=0;
+var puntos=0;
+var puntos_letras=0;
+var bandera=0;
+
+function muestra_info()
+{
+	document.getElementById("botoncomprobar").style.display="inline";
+	document.getElementById("botonterminar").style.display="inline";
+	document.getElementById("texto").style.display="inline";
+	document.getElementById("respuesta").style.display="none";
+	
+	document.getElementById("botonsiguiente").style.display="none";
+	document.getElementById("botonempezar").style.display="none";
+	
+	if(bandera>1)
+	{
+		return;
+		window.location.reload();
+	}
+
+	if(window.XMLHttpRequest)
+	{
+		xhttp=new XMLHttpRequest();
+	}
+	else
+	{
+		xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	xhttp.open("GET","trivial.xml",false);
+	xhttp.send("");
+	var fichero=xhttp.responseXML;
+	var clase=fichero.getElementsByTagName("pregunta");
+	var enunciado=fichero.getElementsByTagName("enunciado");
+	var respuesta=fichero.getElementsByTagName("respuesta");
+	
+	if(document.getElementById('texto').value=="" && i>0)
+	{
+		alert("Debes contestar");
+	}
+	else
+	{
+		texto=enunciado[i].childNodes[0].nodeValue;
+		document.getElementById('pregunta').innerHTML=texto;
+		i++;
+		document.getElementById('texto').value="";
+	}
+	
+	if(i>0 && i<2)
+	{
+		bandera+=1;
+	}
+	
+}
+
+function acabar()
+{	
+	window.location.reload();
+}
+
+function siguiente()
+{
+	document.getElementById("respuesta").innerHTML="";
+	muestra_info();
+}
+
+function comprobar()
+{
+	if(i<=0)
+	{
+		alert("Debes empezar la partida!");
+		return;		
+	}
+	
+	if(window.XMLHttpRequest)
+	{
+		xhttp=new XMLHttpRequest();
+	}
+	else
+	{
+		xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	xhttp.open("GET","trivial.xml",false);
+	xhttp.send("");
+	var fichero=xhttp.responseXML;
+	var clase=fichero.getElementsByTagName('pregunta');
+	var enunciado=fichero.getElementsByTagName("enunciado");
+	var respuesta=fichero.getElementsByTagName("respuesta");
+
+	if(document.getElementById('texto').value=="" && i>0)
+	{
+		alert("Debes contestar!");
+		return;
+	}
+	
+	if(respuesta[j].childNodes[0].nodeValue.toUpperCase()==document.getElementById('texto').value.toUpperCase())
+	{
+		puntos+=10;
+		document.getElementById('puntos').innerHTML=puntos;
+		if(i>13)
+		{
+			puntos_letras+=10;
+		}
+		document.getElementById("respuesta").style.display="inline";
+		document.getElementById("respuesta").innerHTML="Correcto";
+		document.getElementById("respuesta").className="correcta";
+		j++;
+		document.getElementById("botoncomprobar").style.display="none";
+		document.getElementById("botonsiguiente").style.display="inline";
+	}
+	else
+	{
+		document.getElementById("respuesta").style.display="inline";
+		document.getElementById("respuesta").innerHTML="Incorrecto, la respuesta es: "+respuesta[j].childNodes[0].nodeValue;
+		document.getElementById("respuesta").className="incorrecta";
+		j++;
+		document.getElementById("botoncomprobar").style.display="none";
+		document.getElementById("botonsiguiente").style.display="inline";
+	}
+	
+	if(i>=0 && i<=13)
+	{
+			document.getElementById('pciencia').innerHTML="Ciencias: "+puntos+" puntos";
+	}
+	if(i>13)
+	{
+			document.getElementById('pletras').innerHTML="Letras: "+puntos_letras+" puntos";
+	}
+}
+
+</script>
+
+</head>
+<body>
+
+<div id="contenido">
+
+<div id="cabecera">
+<p id ="banner"><a href="index.html"><img src="./img/trivial.png"/></a></p>
+<h3></h3>
+</div>
+
+<div id="izquierda">
+
+</div>
+
+<div id="derecha">
+
+</div>
+
+<div id="central">
+<p id="Inicio">
+<table id="tablatrivial">
+<tr>
+<td id="pregunta">Estas listo/a para empezar? Suerte!</td>
+<td rowspan="3"><p id="puntos">-</p>Puntos Totales<p id="pciencia">Ciencias: </p><p id="pletras">Letras: </p></td>
+</tr>
+<br>
+<tr>
+<td>
+<input type="text" value="" name="texto" size="30px" id="texto" placeholder="Escribe tu respuesta"/><input type="button" value="Comprobar" id="botoncomprobar" onClick="comprobar()"/>
+<input type="button" value="Empezar" id="botonempezar" onClick="muestra_info()"/><input type="button" value="Siguiente" id="botonsiguiente" onClick="siguiente()"/>
+<input type="button" value="Terminar" id="botonterminar" onClick="acabar()"/>
+</td>
+</tr>
+<tr>
+<td>
+<span id="respuesta" class=""></span>
+</td>
+</tr>
+</table>
+</p>
+</div>
+<div id="pie">
+<p id="final">
+Creado y diseñado por DRM
+<!--
+<?php
+$file = fopen("archivo.txt", "a");
+fwrite($file, "Puntos de " . PHP_EOL);
+fclose($file);
+?>
+
+<?php 
+$file = fopen("archivo.txt", "r");
+while(!feof($file)) {
+echo fgets($file)."<br />";
+}
+fclose($file);
+?>
+-->
+</p>
+</div>
+</div>
+</body>
+</html>
