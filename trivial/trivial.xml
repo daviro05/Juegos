@@ -25,11 +25,7 @@
 		</pregunta>
 		<pregunta numero="2" dificultad="facil"> 
 			<enunciado>Cuál es el fruto del roble?</enunciado>
-<<<<<<< HEAD
 			<respuesta id="respuesta">bellota</respuesta>
-=======
-			<respuesta id="respuesta">La bellota</respuesta>
->>>>>>> 79bf60f0032d9f310f52cb38be4e4903f3291fb2
 		</pregunta>
 		<pregunta numero="3" dificultad="facil"> 
 			<enunciado>Pueden nadar los gorilas?</enunciado>
@@ -37,7 +33,6 @@
 		</pregunta>
 		<pregunta numero="4" dificultad="media">
 			<enunciado>Qué órgano segrega la hormona insulina?</enunciado>
-<<<<<<< HEAD
 			<respuesta id="respuesta">pancreas</respuesta>
 		</pregunta>
 		<pregunta numero="5" dificultad="media">
@@ -47,17 +42,6 @@
 		<pregunta numero="6" dificultad="media">
 			<enunciado>Cuál de los cinco sentidos se desarrolla el primero?</enunciado>
 			<respuesta id="respuesta">olfato</respuesta>
-=======
-			<respuesta id="respuesta">El pancreas</respuesta>
-		</pregunta>
-		<pregunta numero="5" dificultad="media">
-			<enunciado>Cuál es el único mamífero con cuatro rodillas?</enunciado>
-			<respuesta id="respuesta">El elefante</respuesta>
-		</pregunta>
-		<pregunta numero="6" dificultad="media">
-			<enunciado>Cuál de los cinco sentidos se desarrolla el primero?</enunciado>
-			<respuesta id="respuesta">El olfato</respuesta>
->>>>>>> 79bf60f0032d9f310f52cb38be4e4903f3291fb2
 		</pregunta>
 		<pregunta numero="7" dificultad="media">
 			<enunciado>Cuántas pirámides hay en Egipto: 10, 1.000, o 10.000?</enunciado>
@@ -105,11 +89,7 @@
 		</pregunta>
 		<pregunta numero="3" dificultad="facil"> 
 			<enunciado>Cuál es el signo de puntuación más usado?</enunciado>
-<<<<<<< HEAD
 			<respuesta id="respuesta">coma</respuesta>
-=======
-			<respuesta id="respuesta">La coma</respuesta>
->>>>>>> 79bf60f0032d9f310f52cb38be4e4903f3291fb2
 		</pregunta>
 		<pregunta numero="4" dificultad="media">
 			<enunciado>Cuál es la única capital de país europeo que comienza por "O"?</enunciado>
@@ -125,11 +105,7 @@
 		</pregunta>
 		<pregunta numero="7" dificultad="media">
 			<enunciado>Cuál es el segundo idioma más hablado del mundo?</enunciado>
-<<<<<<< HEAD
 			<respuesta id="respuesta">Español</respuesta>
-=======
-			<respuesta id="respuesta">El Español</respuesta>
->>>>>>> 79bf60f0032d9f310f52cb38be4e4903f3291fb2
 		</pregunta>
 		<pregunta numero="8" dificultad="dificil">
 			<enunciado>Que palabra designa la oposicion a una corriente electrica en un conductor?</enunciado>
