@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<title>Juego HTML5</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+		<div class="principal">
+
+			<div class="izquierda">
+            	<h3 class="tituloPuntuaciones">INSTRUCCIONES</h3>
+						<p><img class='iconos1' src='./imagenes/wasd.png'> P1.</p>
+						<p><img class='iconos1' src='./imagenes/flechas.png'> P2.</p>
+						<p><img class='iconos' src='./imagenes/enter.png'> reiniciar.</p>
+						<p>Versión 1.0</p>
+						<p>Próximamente nuevos cambios...</p>
+						<!--<button type='button' id='empezar' onclick="comenzarPartida()">
+						Comenzar </button>-->
+        	</div>
+
+        	<div class="derecha">
+            	<h3 class="tituloPuntuaciones">PUNTUACIONES</h3>
+            	<ol id="puntuaciones" ></ol>
+        	</div>
+
+			<div class="centro">
+				<canvas id='game' width="1000" height="500"></canvas>
+
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+				<script src="modal.js"></script>
+				<script src="dibujos.js"></script>
+				<script src="movimientos.js"></script>
+				<script src="main.js"></script>
+				<script src="jugador.js"></script>
+
+				<div id="informacion">
+					<span id="nivel"></span>
+					<span id="vida_jefe"></span>
+					<span id="puntos"></span>
+					<br>
+					<table id="avatares">
+						<!--<td><button id="crear"><img id="crea" class="personajes" src="./imagenes/avatares/crear.png"></button></td>-->
+						<td><button id="crear"><img id="p1" class="personajes" src="./imagenes/avatares/p1.png"></button></td>
+						<td><button id="crear"><img id="p2" class="personajes" src="./imagenes/avatares/p2.png"></button></td>
+						<td><button id="crear"><img id="p3" class="personajes" src="./imagenes/avatares/p3.png"></button></td>
+						<td><button id="crear"><img id="p4" class="personajes" src="./imagenes/avatares/p4.png"></button></td>
+						<tr>
+							<td>P1</td>
+							<td>P2</td>
+							<td>P3</td>
+							<td>P4</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+				
+		</div>
+
+<!--
+		<div id="myModal" class="modal">
+		  <div class="modal-content">
+		    <span class="close">x</span>
+		    <form enctype="multipart/form-data" action="subir.php" method="POST">
+				<input name="uploadedfile" type="file" accept="image/jpeg"/>
+				<input type="submit" value="Subir archivo" />
+			</form>
+		  </div>
+		</div>
+-->
+
+</body>
+</html>

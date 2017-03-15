@@ -1,0 +1,162 @@
+
+body{
+    background-image: url("./imagenes/forest2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@font-face{
+ font-family:"Raider";
+ src:url(./fonts/raidercrusader.ttf);
+}
+
+@font-face{
+ font-family:"Art";
+ src:url(./fonts/artbrewery.ttf);
+}
+
+.iconos{
+    width: 50px;
+}
+
+.iconos1{
+    width: 70px;
+}
+
+#game{
+    padding: 0;
+    margin: auto;
+    display: block;
+    border: 5px solid black;
+}
+
+#informacion{
+	border: 2px solid black;
+    width: 1020px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: left;
+    background-color: white;
+}
+
+#nivel{
+	font-size: 30px;
+    position: absolute;
+    margin: 20px;
+}
+
+#puntos{
+    font-size: 20px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top:60px;
+}
+
+#vida_jefe{
+	text-align: right;
+    position: absolute;
+    margin-left: 820px;
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+#avatares{
+	text-align: center;
+	margin: auto;
+    margin-top:20px;
+}
+
+.personajes{
+	width: 50px;
+}
+
+ol{
+    text-align: left;
+    
+}
+
+li{
+    --margin-left: 40px;
+}
+
+li .puntosp{
+    float: right;
+    /*margin-right: 90px;*/
+}
+
+.nombre_jugador{
+
+    white-space: nowrap;
+    width: 40%;
+    /*overflow: hidden;*/
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+div.principal{
+    text-align: center;
+}
+
+div.izquierda, div.derecha {
+    width: 200px;
+    display: block;
+}
+
+div.derecha {
+    float: right;
+    border: 2px solid black;
+    background-color: ghostwhite;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+div.izquierda {
+    float: left;
+    border: 2px solid black;
+    background-color: ghostwhite;
+    height: 400px;
+}
+
+div.centro{
+    display:inline-block;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px; /* Could be more or less, depending on screen size */
+    height: 200px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

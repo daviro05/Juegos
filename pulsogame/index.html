@@ -1,0 +1,104 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Pulsame</title> 
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+  <script src="funciones.js"></script>
+
+</head>
+<body>
+<script language="javascript"> 
+//window.onload=comenzar;
+
+var i = 50;
+var reproducir = true;
+var audio_rojo = new Audio('rojo.mp3');
+var audio_azul = new Audio('azul.mp3');
+var campana = new Audio('campana.mp3');
+var ambiente = new Audio('ambiente.mp3');
+
+ambiente.loop = true;
+
+
+
+function contador_rojo() 
+{
+  if(reproducir){
+    campana.play();
+    ambiente.play();
+    reproducir = false;
+  }
+  if(i == 0 || i == 100){
+     boton_r.disabled = true;
+     boton_a.disabled = true;
+     ambiente.loop = false;
+     ambiente.pause();
+     campana.play();
+     if(i<=0){
+       document.getElementById("principal").style.background = "red";
+       document.getElementById('texto').textContent = "Gana el equipo ROJO";
+       audio_rojo.play();
+
+     }
+     else{
+        document.getElementById("principal").style.background = "blue";
+       document.getElementById('texto').textContent = "Gana el equipo AZUL";
+       audio_azul.play();
+     }
+
+  }
+  else{
+    i = i - 5;
+    $('#bar').css('width', i + '%'); 
+  }
+}
+
+function contador_azul() 
+{ 
+  if(i == 0 || i == 100){
+     boton_r.disabled = true;
+     boton_a.disabled = true;
+     ambiente.loop = false;
+     ambiente.pause();
+     campana.play();
+     if(i>=100){
+      document.getElementById("principal").style.background = "blue";
+      document.getElementById('texto').textContent = "Gana el equipo AZUL";
+      audio_azul.play();
+    }
+    else{
+       document.getElementById("principal").style.background = "red";
+       document.getElementById('texto').textContent ="Gana el equipo ROJO";
+       audio_rojo.play();
+     }
+  }
+  else{
+    i = i + 5;
+    $('#bar').css('width', i + '%');
+    }  
+}
+</script> 
+
+
+<div>
+  <center><input type="button" id="boton_a" value="Pulsa" onclick="contador_azul()" /></center>
+</div>
+
+<center>
+<div id="principal" class="progress">
+<span id="texto"></span>
+  <div id="bar" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="50" aria-valuemax="100" style="width: 50%">
+  </div>
+</div>
+</center> 
+
+<div>
+  <center><input type="button" id="boton_r" value="Pulsa" onclick="contador_rojo()" /></center>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Pulsame</title> 
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="funciones.js"></script>
+</head>
+<body>
+<script language="javascript"> 
+//window.onload=comenzar;
+
+var i = 0;
+var totalTiempo=10;
+var record;
+leerPuntuacion();
+
+function contador() 
+{ 
+  if(i==0)
+    updateReloj();
+  i = i + 1; 
+  var btn = document.getElementById("boton"); 
+  btn.value = i; 
+}
+
+function updateReloj()
+{
+  document.getElementById('cuenta_atras').innerHTML = "Tiempo: "+totalTiempo+" segundos";
+
+  if(totalTiempo==0)
+  {
+   boton.disabled = true;
+   if(i>record){
+      record=i;
+      guardarPuntuacion();
+    }
+  document.getElementById('cuenta_atras').innerHTML = "<input type='button' id='' value='Reiniciar' onclick='reiniciar()' />";
+  leerPuntuacion();
+}else{
+  /* Restamos un segundo al tiempo restante */
+  totalTiempo-=1;
+  /* Ejecutamos nuevamente la función al pasar 1000 milisegundos (1 segundo) */
+  setTimeout("updateReloj()",1000);
+  }
+}
+
+
+function getRecord(){
+  return record;
+}
+
+
+function reiniciar(){
+  i = 0;
+  totalTiempo=10;
+  document.getElementById('cuenta_atras').innerHTML = "Tiempo: "+totalTiempo+" segundos";
+  var btn = document.getElementById("boton"); 
+  btn.value = "Pulsa"; 
+  leerPuntuacion();
+  boton.disabled = false;
+} 
+</script> 
+
+
+<div>
+      <center><p id="cuenta_atras">Tiempo: 10 segundos</p></center>
+</div>
+
+<div>
+  <center><input type="button" id="boton" value="Pulsa" onclick="contador()" /></center>
+</div>
+
+<div id="record">
+      <center>RECORD: <span id="puntuaciones"></span></center>
+</div> 
+
+</body>
+</html>

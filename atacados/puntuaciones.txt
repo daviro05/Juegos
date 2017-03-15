@@ -1,0 +1,5 @@
+﻿<li><span class=nombre_jugador>David</span> : <span class=puntosp>18500</span></li>
+<li><span class=nombre_jugador>David man</span> : <span class=puntosp>18500</span></li>
+<li><span class=nombre_jugador>Pepe</span> : <span class=puntosp>18500</span></li>
+<li><span class=nombre_jugador>Miriam</span> : <span class=puntosp>17100</span></li>
+<li><span class=nombre_jugador>Jazapafe</span> : <span class=puntosp>16100</span></li>

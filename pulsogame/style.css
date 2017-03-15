@@ -1,0 +1,42 @@
+body{
+
+	background-color: black;
+}
+
+#boton_a{
+	background-image: url("./boton_azul.png");
+	margin-top:10px;
+	transform: rotate( 180deg );
+}
+
+#boton_r{
+	background-image: url("./boton_rojo.png");
+	margin-top:10px;
+}
+
+.progress{
+	margin-top:30px;
+	width: 300px;
+	color:black;
+}
+
+#boton_a,#boton_r{
+	outline: none;
+	width: 200px;
+	height: 200px;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 1px solid #000000;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 40px;
+	color:white;
+}
+#texto{
+	font-size: 15px;
+}

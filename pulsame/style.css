@@ -1,0 +1,35 @@
+body{
+
+	background-color: black;
+}
+
+#boton{
+	width: 300px;
+	height: 300px;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 1px solid #000000;
+	background-image: url("./boton.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 40px;
+}
+
+#cuenta_atras,#record{
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+	margin-top:80px;
+}
+
+#record{
+	margin-top: 20px;
+	color:white;
+}
+
