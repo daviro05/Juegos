@@ -1,2 +1,14 @@
-
-<span class=nombre_jugador>J&E&E/DN</span> <span class=tit>Ciencias: </span><span class=puntosp>70</span><span class=tit>Letras: </span><span class=puntosp>130</span><span class=tit>Total: </span><span class=puntosp>200</span><br>
+﻿
+<span class=nombre_jugador>David</span>   -  clásico  -  Puntos Totales: </span><span class=puntosp>290</span><br>
+<span class=nombre_jugador>David</span>   -  disney  -  Puntos Totales: </span><span class=puntosp>230</span><br>
+<span class=nombre_jugador>Ivan</span>   -  disney  -  Puntos Totales: </span><span class=puntosp>130</span><br>
+<span class=nombre_jugador>IvanGema</span>   -  clásico  -  Puntos Totales: </span><span class=puntosp>120</span><br>
+<span class=nombre_jugador>Masters</span>   -  clásico  -  Puntos Totales: </span><span class=puntosp>120</span><br>
+<span class=nombre_jugador>carmen</span>   -  harry  -  Puntos Totales: </span><span class=puntosp>80</span><br>
+<span class=nombre_jugador>Eva </span>   -  disney  -  Puntos Totales: </span><span class=puntosp>90</span><br>
+<span class=nombre_jugador>Mariana</span>   -  disney  -  Puntos Totales: </span><span class=puntosp>240</span><br>
+<span class=nombre_jugador>And&Lau</span>   -  disney  -  Puntos Totales: </span><span class=puntosp>160</span><br>
+<span class=nombre_jugador>andlena</span>   -  harry  -  Puntos Totales: </span><span class=puntosp>20</span><br>
+<span class=nombre_jugador>lena</span>   -  clásico  -  Puntos Totales: </span><span class=puntosp>170</span><br>
+<span class=nombre_jugador>nadie</span>   -  clásico  -  Puntos Totales: </span><span class=puntosp>140</span><br>
+<span class=nombre_jugador>reytry</span>   -  clásico  -  Puntos Totales: </span><span class=puntosp>140</span><br>

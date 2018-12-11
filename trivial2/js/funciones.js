@@ -6,9 +6,10 @@ var puntos_ciencias=0;
 var bandera=0;
 leerPuntuacion()
 
-var pre = ["./preguntas/trivial.xml", "./preguntas/trivial2.xml"];
-var num = suerte();
+var pre = ["./preguntas/trivial.xml", "./preguntas/trivial2.xml","./preguntas/trivial3.xml","./preguntas/trivial4.xml"];
+var num = suerte(3);
 var modo_juego=" ";
+var perfecto=1;
 
 function modo(cadena){
 	if(cadena == "disney"){
@@ -17,9 +18,22 @@ function modo(cadena){
 		modo_juego = "disney";
 		document.getElementById('modos').innerHTML="<span id='m_disney'>Modo DISNEY</span>";
 	}
+	if(cadena == "harry"){
+		pre = ["./preguntas/hpotter.xml"];
+		num = 0;
+		modo_juego = "harry";
+		document.getElementById('modos').innerHTML="<span id='m_harry'>Modo Harry Potter</span>";
+	}
+	if(cadena == "starwars"){
+		pre = ["./preguntas/starwars.xml"];
+		num = 0;
+		modo_juego = "starwars";
+		document.getElementById('modos').innerHTML="<span id='m_starwars'>Modo Star Wars</span>";
+	}
 	if(cadena == "clasico"){
-		pre = ["./preguntas/trivial.xml", "./preguntas/trivial2.xml"];
-		num = suerte();
+		pre = ["./preguntas/trivial.xml", "./preguntas/trivial2.xml","./preguntas/trivial3.xml","./preguntas/trivial4.xml"];
+		num = suerte(3);
+		modo_juego = "clásico";
 		document.getElementById('modos').innerHTML="<span id='m_clasico'>Modo CLÁSICO</span>";
 	}
 
@@ -70,6 +84,7 @@ function muestra_info(){
 	
 	if((document.getElementById('texto').value=="") && i>0)
 	{
+		//Esto hay que cambiarlo para que no sean alerts
 		alert("Debes contestar");
 	}
 	else
@@ -87,8 +102,8 @@ function muestra_info(){
 	
 }
 
-function suerte() {
-	var aleatorio = Math.round(Math.random()*1);
+function suerte(num) {
+	var aleatorio = Math.round(Math.random()*num);
 	return aleatorio;
 }
 
@@ -159,10 +174,10 @@ function comprobar()
 	{
 		puntos+=10;
 		document.getElementById('puntos').innerHTML=puntos;
-		if(i<14)
+		/*if(i<14)
 			puntos_ciencias+=10;
 		if(i>13)
-			puntos_letras+=10;
+			puntos_letras+=10;*/
 			
 		document.getElementById("respuesta").style.display="inline";
 		document.getElementById("respuesta").innerHTML="Correcto";
@@ -173,6 +188,7 @@ function comprobar()
 	}
 	else
 	{
+		perfecto=0;
 		document.getElementById("respuesta").style.display="inline";
 		document.getElementById("respuesta").innerHTML="Incorrecto, la respuesta es: "+respuesta[j].childNodes[0].nodeValue;
 		document.getElementById("respuesta").className="incorrecta";
@@ -181,14 +197,14 @@ function comprobar()
 		document.getElementById("botonsiguiente").style.display="inline";
 	}
 	
-	if(i>=0 && i<=13)
+	/*if(i>=0 && i<=13)
 	{
 			document.getElementById('pciencia').innerHTML="Ciencias: "+puntos_ciencias+" puntos";
 	}
 	else if(i>13)
 	{
 			document.getElementById('pletras').innerHTML="Letras: "+puntos_letras+" puntos";
-	}
+	}*/
 }
 
 function guardarPuntuacion(){
@@ -208,8 +224,7 @@ function guardarPuntuacion(){
 	       url: "guardar.php",
 	       type: "post",
 	       data: {"persona" : "<span class=nombre_jugador>"+person+"</span>", 
-		   "puntos" :"<span class=tit>Ciencias: </span><span class=puntosp>"+puntos_ciencias+"</span><span class=tit>Letras: </span><span class=puntosp>"+puntos_letras+
-		   "</span><span class=tit>Total: </span><span class=puntosp>"+puntos+"</span><br>"},
+		   "puntos" :"  -  "+modo_juego+"  -  Puntos Totales: </span><span class=puntosp>"+puntos+"</span><br>"},
 	       	       success: function(data){
 	       	           //$("#puntuaciones").text(data);'
 	       }

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE trivial[
+<!ELEMENT trivial (categoria*)>
+<!ELEMENT categoria (pregunta*)>
+<!ELEMENT pregunta (enunciado,respuesta)>
+<!ELEMENT enunciado (#PCDATA)>
+<!ELEMENT respuesta (#PCDATA)>
+<!--<!ATTLIST categoria nombre CDATA #REQUIRED>
+<!ATTLIST pregunta numero CDATA #REQUIRED>
+<!ATTLIST pregunta dificultad CDATA #REQUIRED>-->
+<!ATTLIST respuesta id CDATA #REQUIRED>]>
+
+<!--<?xml-stylesheet type="text/xsl" href="trivial.xsl"?>-->
+
+<trivial>	
+	<categoria>
+		<pregunta>
+			<enunciado>¿Cuál es el lugar más frío de la tierra?</enunciado>
+			<respuesta id="respuesta">Antartida</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Quién escribió La Odisea?</enunciado>
+			<respuesta id="respuesta">Homero</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Cómo se llama la capital de Mongolia?</enunciado>
+			<respuesta id="respuesta">Ulan Bator</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Cómo se llama la Reina del Reino Unido?</enunciado>
+			<respuesta id="respuesta">Isabel II</respuesta>
+		</pregunta>	
+		<pregunta>
+			<enunciado>¿En qué continente está Ecuador?</enunciado>
+			<respuesta id="respuesta">America</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Dónde originaron los juegos olímpicos? (Ciudad)</enunciado>
+			<respuesta id="respuesta">Olimpia</respuesta>
+		</pregunta>	
+		<pregunta>
+			<enunciado>¿Qué cantidad de huesos en el cuerpo humano adulto?</enunciado>
+			<respuesta id="respuesta">206</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Quién pintó “la última cena”?</enunciado>
+			<respuesta id="respuesta">Leonardo da Vinci</respuesta>
+		</pregunta>	
+		<pregunta>
+			<enunciado>¿Dónde se encuentra la Sagrada Familia?</enunciado>
+			<respuesta id="respuesta">Barcelona</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Cuál es el océano más grande?</enunciado>
+			<respuesta id="respuesta">Pacifico</respuesta>
+		</pregunta>	
+		<pregunta>
+			<enunciado>¿Quién es el padre del psicoanálisis?</enunciado>
+			<respuesta id="respuesta">Freud</respuesta>
+		</pregunta>	
+		<pregunta>
+			<enunciado>¿Cuál es el disco más vendido de la historia?</enunciado>
+			<respuesta id="respuesta">Thriller</respuesta>
+		</pregunta>	
+		<pregunta>
+			<enunciado>¿Qué producto cultiva más Guatemala?</enunciado>
+			<respuesta id="respuesta">Cafe</respuesta>
+		</pregunta>	
+		<pregunta>
+			<enunciado>¿Cuál es el país más grande del mundo?</enunciado>
+			<respuesta id="respuesta">Rusia</respuesta>
+		</pregunta>	
+		<pregunta>
+			<enunciado>Si 50 es el 100%, ¿cuánto es el 90%?</enunciado>
+			<respuesta id="respuesta">45</respuesta>
+		</pregunta>	
+		<pregunta>
+			<enunciado>¿Cual es país más poblado de la Tierra?</enunciado>
+			<respuesta id="respuesta">China</respuesta>
+		</pregunta>	
+		<pregunta>
+			<enunciado>¿Cuál es el color que representa la esperanza?</enunciado>
+			<respuesta id="respuesta">Verde</respuesta>
+		</pregunta>	
+		<pregunta>
+			<enunciado>¿Qué rama de la Biología estudia los animales?</enunciado>
+			<respuesta id="respuesta">Zoologia</respuesta>
+		</pregunta>	
+		<pregunta>
+			<enunciado>¿De qué estilo arquitectónico es la Catedral de Notre Dame en París?</enunciado>
+			<respuesta id="respuesta">Gotico</respuesta>
+		</pregunta>			
+		<pregunta>
+			<enunciado>Fin! Enhorabuena por tu puntuación. Dale al botón de terminar para acabar.</enunciado>
+			<respuesta id="respuesta">Terminar</respuesta>
+		</pregunta>	
+	</categoria>
+</trivial>
