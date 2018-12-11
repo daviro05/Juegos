@@ -174,10 +174,6 @@ function comprobar()
 	{
 		puntos+=10;
 		document.getElementById('puntos').innerHTML=puntos;
-		/*if(i<14)
-			puntos_ciencias+=10;
-		if(i>13)
-			puntos_letras+=10;*/
 			
 		document.getElementById("respuesta").style.display="inline";
 		document.getElementById("respuesta").innerHTML="Correcto";
@@ -196,15 +192,7 @@ function comprobar()
 		document.getElementById("botoncomprobar").style.display="none";
 		document.getElementById("botonsiguiente").style.display="inline";
 	}
-	
-	/*if(i>=0 && i<=13)
-	{
-			document.getElementById('pciencia').innerHTML="Ciencias: "+puntos_ciencias+" puntos";
-	}
-	else if(i>13)
-	{
-			document.getElementById('pletras').innerHTML="Letras: "+puntos_letras+" puntos";
-	}*/
+
 }
 
 function guardarPuntuacion(){
@@ -226,7 +214,6 @@ function guardarPuntuacion(){
 	       data: {"persona" : "<span class=nombre_jugador>"+person+"</span>", 
 		   "puntos" :"  -  "+modo_juego+"  -  Puntos Totales: </span><span class=puntosp>"+puntos+"</span><br>"},
 	       	       success: function(data){
-	       	           //$("#puntuaciones").text(data);'
 	       }
 	    });
 	}
