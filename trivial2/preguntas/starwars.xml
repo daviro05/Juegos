@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE trivial[
+<!ELEMENT trivial (categoria*)>
+<!ELEMENT categoria (pregunta*)>
+<!ELEMENT pregunta (enunciado,respuesta)>
+<!ELEMENT enunciado (#PCDATA)>
+<!ELEMENT respuesta (#PCDATA)>
+<!ATTLIST categoria nombre CDATA #REQUIRED>
+<!ATTLIST pregunta numero CDATA #REQUIRED>
+<!ATTLIST pregunta dificultad CDATA #REQUIRED>
+<!ATTLIST respuesta id CDATA #REQUIRED>]>
+
+<?xml-stylesheet type="text/xsl" href="trivial.xsl"?>
+
+<trivial>	
+	<categoria nombre="ciencias">
+		<pregunta numero="0" dificultad="facil">
+			<enunciado> ¿Qué vehículos usó el Imperio en su asalto a la base de los rebeldes en el planeta Hoth?</enunciado>
+			<respuesta id="respuesta">AT-AT</respuesta>
+		</pregunta>
+		<pregunta numero="1" dificultad="facil">
+			<enunciado> Quien se infiltró en el palacio de Jabba vestido de cazador de recompensas llamado Boushh?</enunciado>
+			<respuesta id="respuesta">Leia</respuesta>
+		</pregunta>
+		<pregunta numero="2" dificultad="facil"> 
+			<enunciado>¿Cuál es la nave más rápida de la Alianza Rebelde?</enunciado>
+			<respuesta id="respuesta">A Wing</respuesta>
+		</pregunta>
+		<pregunta numero="3" dificultad="facil"> 
+			<enunciado>¿Qué horrible criatura ataca a Luke Skywalker en el planeta Hoth?</enunciado>
+			<respuesta id="respuesta">Wampa</respuesta>
+		</pregunta>
+		<pregunta numero="4" dificultad="media">
+			<enunciado>¿En que planeta Anakin y Amidala descubren la fábrica de androides de los separatistas?</enunciado>
+			<respuesta id="respuesta">Geonosis</respuesta>
+		</pregunta>
+		<pregunta numero="5" dificultad="media">
+			<enunciado>¿Cuál es el nombre real de Kylo Ren?</enunciado>
+			<respuesta id="respuesta">Ben Solo</respuesta>
+		</pregunta>
+		<pregunta numero="6" dificultad="media">
+			<enunciado>¿Cuántos E.Ts aparecen en el Episodio I de Star Wars?</enunciado>
+			<respuesta id="respuesta">3</respuesta>
+		</pregunta>
+		<pregunta numero="7" dificultad="media">
+			<enunciado>¿Cuál es la única nave de Star Wars que se creó a tamaño real?</enunciado>
+			<respuesta id="respuesta">Halcon Milenario</respuesta>
+		</pregunta>
+		<pregunta numero="8" dificultad="dificil">
+			<enunciado>¿Cómo se refiere Leia a Chewbacca?</enunciado>
+			<respuesta id="respuesta">Felpudo con patas</respuesta>
+		</pregunta>
+		<pregunta numero="9" dificultad="dificil">
+			<enunciado>¿En el ‘Episodio IV’ quién pronuncia la frase “Su carencia de fe resulta molesta”?</enunciado>
+			<respuesta id="respuesta">Darth Vader</respuesta>
+		</pregunta>
+		<pregunta numero="10" dificultad="dificil">
+			<enunciado>¿Cuántos Oscar ganó la primera entrega de ‘La guerra de las galaxias’?</enunciado>
+			<respuesta id="respuesta">6</respuesta>
+		</pregunta>
+		<pregunta numero="11" dificultad="dificil">
+			<enunciado>¿Quién pronuncia la frase: "¡Es una trampa!"?</enunciado>
+			<respuesta id="respuesta">Ackbar</respuesta>
+		</pregunta>
+		<pregunta numero="12" dificultad="dificil">
+			<enunciado>¿Qué planos quieren robar los rebeldes?</enunciado>
+			<respuesta id="respuesta">Estrella de la muerte</respuesta>
+		</pregunta>
+		<pregunta numero="13" dificultad="dificil">
+			<enunciado>¿Cuándo se estrenó 'Star Wars: Una Nueva Esperanza'? (Día mes y año)</enunciado>
+			<respuesta id="respuesta">25 mayo 1977</respuesta>
+		</pregunta>
+		<pregunta numero="14" dificultad="dificil">
+			<enunciado>Fin! Enhorabuena por tu puntuación. Dale al botón de terminar para acabar.</enunciado>
+			<respuesta id="respuesta">Terminar</respuesta>
+		</pregunta>	
+	</categoria>
+
+</trivial>

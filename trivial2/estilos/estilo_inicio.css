@@ -126,7 +126,7 @@ input[type="button"]
 	display: none;
 	overflow-y: auto;
 	color:white;
-	text-align: right;}
+	text-align: center;}
 
 #final
 {
@@ -151,8 +151,31 @@ input[type="button"]
     src: url(./fonts/fuente_disney.ttf);
 }
 
+@font-face {
+    font-family: harry;
+    src: url(./fonts/fuente_harry.ttf);
+}
+
+@font-face {
+    font-family: starwars;
+    src: url(./fonts/fuente_starwars.ttf);
+}
+
+
 #m_disney{
 	 font-family: disney;
+	 color: white;
+	 font-size: 20px;
+}
+
+#m_harry{
+	 font-family: harry;
+	 color: white;
+	 font-size: 20px;
+}
+
+#m_starwars{
+	font-family: starwars;
 	 color: white;
 	 font-size: 20px;
 }
@@ -160,6 +183,10 @@ input[type="button"]
 #m_clasico{
 	color: white;
 	 font-size: 20px;
+}
+
+#puntos{
+	font-size: 30px;
 }
 
 .arrow{

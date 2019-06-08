@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE trivial[
+<!ELEMENT trivial (categoria*)>
+<!ELEMENT categoria (pregunta*)>
+<!ELEMENT pregunta (enunciado,respuesta)>
+<!ELEMENT enunciado (#PCDATA)>
+<!ELEMENT respuesta (#PCDATA)>
+<!ATTLIST categoria nombre CDATA #REQUIRED>
+<!ATTLIST pregunta numero CDATA #REQUIRED>
+<!ATTLIST pregunta dificultad CDATA #REQUIRED>
+<!ATTLIST respuesta id CDATA #REQUIRED>]>
+
+<?xml-stylesheet type="text/xsl" href="trivial.xsl"?>
+
+<trivial>	
+	<categoria nombre="ciencias">
+		<pregunta numero="0" dificultad="facil">
+			<enunciado>¿Dónde tiene Dumbledore una cicatriz?</enunciado>
+			<respuesta id="respuesta">Rodilla</respuesta>
+		</pregunta>
+		<pregunta numero="1" dificultad="facil">
+			<enunciado>¿Cómo se llama la casa de los Weasly?</enunciado>
+			<respuesta id="respuesta">Madriguera</respuesta>
+		</pregunta>
+		<pregunta numero="2" dificultad="facil"> 
+			<enunciado>¿Cuál es la última contraseña del despacho de Dumbledore?</enunciado>
+			<respuesta id="respuesta">Meigas fritas</respuesta>
+		</pregunta>
+		<pregunta numero="3" dificultad="facil"> 
+			<enunciado>¿En qué libro cambia de canción el sombrero seleccionador?</enunciado>
+			<respuesta id="respuesta">5</respuesta>
+		</pregunta>
+		<pregunta numero="4" dificultad="media">
+			<enunciado>¿Dónde ve Harry a Sirius Black por primera vez?</enunciado>
+			<respuesta id="respuesta">Private Drive</respuesta>
+		</pregunta>
+		<pregunta numero="5" dificultad="media">
+			<enunciado>¿Quién regaló a Harry la capa de invisibilidad?</enunciado>
+			<respuesta id="respuesta">Dumbledore</respuesta>
+		</pregunta>
+		<pregunta numero="6" dificultad="media">
+			<enunciado>¿Cuál es el nombre completo de Dumbledore?</enunciado>
+			<respuesta id="respuesta">Albus Percibal Wulfric Brian Dumbledore</respuesta>
+		</pregunta>
+		<pregunta numero="7" dificultad="media">
+			<enunciado>Qué venden los gemelos Weasly antes de irse de Hogwarts?</enunciado>
+			<respuesta id="respuesta">Sortilegios saltaclases</respuesta>
+		</pregunta>
+		<pregunta numero="8" dificultad="dificil">
+			<enunciado>¿Qué asignaturas da Hermione que no dan Harry y Ron?</enunciado>
+			<respuesta id="respuesta">Runas antiguas Artimancia</respuesta>
+		</pregunta>
+		<pregunta numero="9" dificultad="dificil">
+			<enunciado>¿En qué quiere trabajar Harry cuando acabe la escuela?</enunciado>
+			<respuesta id="respuesta">Auror</respuesta>
+		</pregunta>
+		<pregunta numero="10" dificultad="dificil">
+			<enunciado>¿Qué es un squib?</enunciado>
+			<respuesta id="respuesta">Hijo de magos sin poderes</respuesta>
+		</pregunta>
+		<pregunta numero="11" dificultad="dificil">
+			<enunciado>¿Dónde reaparece Voldemort?</enunciado>
+			<respuesta id="respuesta">Cementerio</respuesta>
+		</pregunta>
+		<pregunta numero="12" dificultad="dificil">
+			<enunciado>¿Qué elemento comparten las varitas de Harry y Voldemort?</enunciado>
+			<respuesta id="respuesta">Pluma de fenix</respuesta>
+		</pregunta>
+		<pregunta numero="13" dificultad="dificil">
+			<enunciado>¿Cuál es el Patronus de Luna Lovegood?</enunciado>
+			<respuesta id="respuesta">Liebre</respuesta>
+		</pregunta>
+		<pregunta numero="14" dificultad="dificil">
+			<enunciado>Fin! Enhorabuena por tu puntuación. Dale al botón de terminar para acabar.</enunciado>
+			<respuesta id="respuesta">Terminar</respuesta>
+		</pregunta>	
+	</categoria>
+
+</trivial>

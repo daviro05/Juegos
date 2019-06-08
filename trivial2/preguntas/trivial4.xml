@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE trivial[
+<!ELEMENT trivial (categoria*)>
+<!ELEMENT categoria (pregunta*)>
+<!ELEMENT pregunta (enunciado,respuesta)>
+<!ELEMENT enunciado (#PCDATA)>
+<!ELEMENT respuesta (#PCDATA)>
+<!--<!ATTLIST categoria nombre CDATA #REQUIRED>
+<!ATTLIST pregunta numero CDATA #REQUIRED>
+<!ATTLIST pregunta dificultad CDATA #REQUIRED>-->
+<!ATTLIST respuesta id CDATA #REQUIRED>]>
+
+<!--<?xml-stylesheet type="text/xsl" href="trivial.xsl"?>-->
+
+<trivial>	
+	<categoria>
+		<pregunta>
+			<enunciado>¿Cómo se llama el animal más rápido del mundo?</enunciado>
+			<respuesta id="respuesta">Guepardo</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿De qué país es el futbolista Zlatan Ibrahimović?</enunciado>
+			<respuesta id="respuesta">Suecia</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿A qué país pertenecen los cariocas?</enunciado>
+			<respuesta id="respuesta">Brasil</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿En qué país se encuentra el famoso monumento Taj Mahal?</enunciado>
+			<respuesta id="respuesta">India</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Cuál fue el primer metal que empleó el hombre?</enunciado>
+			<respuesta id="respuesta">Cobre</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Cómo se llama la estación espacial rusa?</enunciado>
+			<respuesta id="respuesta">Mir</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Cuál es el único mamífero capaz de volar?</enunciado>
+			<respuesta id="respuesta">Murcielago </respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Cuál es el libro sagrado del Islam?</enunciado>
+			<respuesta id="respuesta">Coran</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Qué es más pequeño, un átomo o una molécula?</enunciado>
+			<respuesta id="respuesta">Atomo</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Quién ganó el mundial de 2014?</enunciado>
+			<respuesta id="respuesta">Alemania</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Quién escribió “Hamlet”?</enunciado>
+			<respuesta id="respuesta">Shakespeare</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Qué veterano músico es la canción "Tears in Heaven"?</enunciado>
+			<respuesta id="respuesta">Eric Clapton</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Quién traicionó a Jesús?</enunciado>
+			<respuesta id="respuesta">Judas</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Cómo se llama la energía contenida en el núcleo de los átomos?</enunciado>
+			<respuesta id="respuesta">Nuclear</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿En qué país se usó la primera bomba atómica en combate?</enunciado>
+			<respuesta id="respuesta">Japon</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Cuál es el metal más caro del mundo?</enunciado>
+			<respuesta id="respuesta">Rodio</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Cuántos años tiene un lustro?</enunciado>
+			<respuesta id="respuesta">5</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Quién “sabía que no sabía nada”?</enunciado>
+			<respuesta id="respuesta">Platon</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Cuándo empezó la Primera Guerra Mundial?</enunciado>
+			<respuesta id="respuesta">1914</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>¿Cómo se llama el procedimiento de subir la bandera?</enunciado>
+			<respuesta id="respuesta">Izar</respuesta>
+		</pregunta>
+		<pregunta>
+			<enunciado>Fin! Enhorabuena por tu puntuación. Dale al botón de terminar para acabar.</enunciado>
+			<respuesta id="respuesta">Terminar</respuesta>
+		</pregunta>	
+	</categoria>
+</trivial>
