@@ -1,0 +1,43 @@
+
+body{
+    background: url(img/fondo2.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+.libros{
+    text-align: center;
+    width: 120px;
+    margin-right: 100px;
+}
+
+.banner{
+    width: 70%;
+}
+
+
+.imagen, .codigo{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.redondeado {
+    width: 300px;
+    height: 35px !important;
+    text-align: center;
+  }
+
+  .boton{
+      height: 35px;
+  }
+
+  .centrado{
+      text-align: center;
+  }
+
+  .ins{
+      margin-top:30px;
+  }

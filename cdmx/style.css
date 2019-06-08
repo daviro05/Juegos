@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,600");
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  color: #fff;
+  font-family: 'Raleway', arial, sans-serif;
+  margin: 0;
+  background-color: #333;
+}
+
+.landing {
+  background: transparent url(./mexico3.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 1rem;
+  position: relative;
+}
+.landing::before {
+  background-color: rgba(0, 0, 0, 0.8);
+  content: '';
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  -webkit-transform: rotate(45deg) translateY(-30%) scale(1.6);
+          transform: rotate(45deg) translateY(-30%) scale(1.6);
+  -webkit-filter: blur(80px);
+          filter: blur(80px);
+}
+
+.description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 200;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0), 4px 4px 8px rgb(152, 152, 255);
+}
+
+.landing-inner {
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  width: 80%;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+.countdown div {
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  margin: 0.2rem;
+  width: 100px;
+  color: #000;
+  border: 2px solid black;
+}
+.countdown div:nth-child(1) {
+  background-color: rgb(15, 90, 27);
+}
+.countdown div:nth-child(2) {
+  background-color: rgb(255, 255, 255);
+}
+.countdown div:nth-child(3) {
+  background-color: rgb(255, 255, 255);
+}
+
+.countdown div:last-child {
+    background-color: rgb(214, 0, 0);
+}
+.countdown span {
+  font-weight: 300;
+  display: block;
+  font-size: 1rem;
+  color: #000000;
+  margin-top: 0.5rem;
+}
+
+.imagenes{
+  width: 50%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .countdown, .description {
+    font-size: 1.2rem;
+  }
+
+  .countdown div {
+    width: 80px;
+  }
+
+  .imagenes{
+    width: 100%;
+    margin: auto;
+  }
+}
+.mensaje a{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    background-color: #000000
+}
+
+.mensaje a:hover{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color:rgba(61, 255, 255, 0.781);
+    background-color: #000000
+}
+
+.imagenes img{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color:white
+}

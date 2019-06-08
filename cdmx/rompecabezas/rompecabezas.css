@@ -1,0 +1,15 @@
+body{background: transparent url(../mexico2.jpg) no-repeat; margin:0; padding:0; font-family:Helvetica;}
+
+span{color:#FFF;}
+
+div#content{margin-top:10px;}
+
+div#conf{padding-bottom:10px;}
+
+table{border:2px solid rgb(35, 87, 231);border-collapse:collapse;}
+
+td.pieza{background:url(../imagenes/enigma.jpg); transition:.3s ease-in-out; -moz-transition:.3s ease-in-out; -webkit-transition:.3s ease-in-out; -o-transition:.3s ease-in-out; cursor:pointer;}
+
+div.posic{display: none}
+
+div#titulo{color:#FFF; font-size:30px; font-weight:bold; }

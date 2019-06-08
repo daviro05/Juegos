@@ -1,0 +1,65 @@
+
+body{
+    background: url(img/fondo3.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+#mapa{
+    text-align: center;
+}
+
+.banner{
+    width: 70%;
+}
+
+.instrucciones{
+    background-color: white;
+    border:1px solid black;
+    border-radius: 20px;
+    width: 500px;
+    margin: auto;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.imagen, .codigo{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.correcto{
+    color: green;
+    text-align: center;
+}
+
+.incorrecto{
+    color: red;
+    text-align: center;
+}
+
+.mtesoro{
+    width: 20%;
+}
+
+.redondeado {
+    width: 300px;
+    height: 35px !important;
+    text-align: center;
+  }
+
+  .boton{
+      height: 35px;
+  }
+
+  .centrado{
+      text-align: center;
+  }
+
+  .ins{
+      margin-top:30px;
+  }
