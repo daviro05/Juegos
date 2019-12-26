@@ -268,21 +268,21 @@ function triv() {
         blocker = document.querySelector(".blockOff");
     
     var fax = [
-      "Triskaidekaphobia is the fear of the number 13",
-      "Arm-fall-off-boy is a superhero in the DC universe who can take off his arm",
-      "The world's longest word is 189,819 letters long and is the name of a giant protein",
-      "112-year-old Masazō Nonaka of Japan, born 25 July 1905, is the world's oldest living man",
-      "Coca-Cola's original color was green and was meant to be medicine",
-      "A regular guitar has only six strings",
-      "Aircraft black boxes are suprisingly colored orange",
-      "New Zealand's 90 mile beach is only 55 miles long",
-      "The Spanish Flu did not originate in a Spanish-speaking country. It was the USA",
-      "Russia celebrates its October Revolution every November",
-      "The 100 year war did not last 100 years. It lasted 116 years",
-      "The purple finch is ironically colored red",
-      "The longest chess game in a tournament took 269 moves and was 20 hours long",
-      "'Fresh Guacamole' was the shortest movie that was nominated for an Oscar at only 100 seconds",
-      "SOS does not mean anything. It's just a sign for help"
+      "El filósofo griego Platón pensaba que el amor era una enfermedad mental grave",
+      "El corazon humano tipico late mas de 100,000 veces en un dia.",
+      "Todas las termitas del mundo juntas pesan 10 veces mas que todos los humanos juntos.",
+      "En el siglo 19 en Inglaterra, el intento de suicidio era castigado con la horca.",
+      "Un hombre llamado Charles Osborne tuvo hipo durante 69 años.",
+      "111,111,111 x 111,111,111= 12,345,678,987,654,321",
+      "El numero romano para 1666 es MDCLXVI",
+      "Las mujeres parpadean casi el doble que los hombres.",
+      "La letra 'J' no aparece en ninguna parte en la tabla periodica de los elementos.",
+      "El Rey de Espadas es el unico rey sin bigote.",
+      "Los molinos de viento siempre giran al contrario de las manecillas del reloj, excepto en Irlanda",
+      "El champagne fue inventado por un monje del siglo 18 llamado Dom Perignon.",
+      "Al nacer tenemos 300 huesos, pero de adulto solo tenemos 206.",
+      "Londres es la única capital europea sin alcalde.",
+      "Los camellos tienen tres párpados para protejerse de las tormentas de arena."
     ]
     
     var rFact = Math.floor(Math.random()*fax.length);
