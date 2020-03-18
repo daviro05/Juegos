@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <title>The Mistery of Cris</title>
+</head>
+<body>
+    <div class="imagen">
+            <img class="banner" src="img/banner.gif">
+    </div>
+
+    <div class="codigo">
+        <div class="centrado">
+                <input type="text" id="codigo_secreto" class="redondeado" placeholder="Código secreto" onkeypress="pulsar(event)">
+                    <!--<button type="button" class="btn btn-default" onclick="comprobarCodigo()">Comprobar</button>-->
+        </div>
+     </div>
+
+     <div id="mapa">
+
+    </div>
+
+    <div class="centrado ins">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">INSTRUCCIONES</button>
+        <div id="demo" class="collapse instrucciones">
+            <p> Para cada nivel deberás obtener el código secreto e introducirlo en el campo de texto. </p>
+            <p> Si el código introducido es correcto...obtendrás una pista para el siguiente reto. ¿Podrás resolver el misterio de Cris?</p>
+            <p> En la mochila accedes al Inventario. Si necesitas despejarte, pulsa en Relax Time!</p>
+        </div>
+        <!--<br><br><button type="button" class="btn btn-info" onclick="verCapitulos()">CAPÍTULOS</button>-->
+    </div>
+
+    <div class="inventario">
+        <img class="mochila" src="img/mochila.png" onclick="irA('inventario')">
+        <img class="sudoku" src="img/sudoku.png" onclick="irA('sudoku')">
+    </div>
+    
+</body>
+<script src="./main.js"></script>
+</html>
