@@ -15,7 +15,8 @@ function comprobarCodigo() {
 
     switch(encriptado){
 
-        case "QU1BWklORw==": //amazing
+        case "QU1BWklORw==": //amazing nice
+        case "TklDRQ==":
                 document.getElementById("mapa").innerHTML = "<p class='correcto'>¡CÓDIGO CORRECTO!<p><br><a href='./img/270919951992.jpg' target='_blank'><img class='mtesoro' src='img/mapa.png'></a>";
         break;
 
