@@ -11,7 +11,7 @@ function comprobarCodigo() {
     codigo = codigo.toUpperCase();
 
     var encriptado = btoa(codigo);
-    alert(encriptado);
+    //alert(encriptado);
 
     switch(encriptado){
 
@@ -24,12 +24,12 @@ function comprobarCodigo() {
                 document.getElementById("mapa").innerHTML = "<br><a href='#' target='_blank'><img class='mtesoro' src='../img/correcto.png'></a>";
         break;
 
-        case "U0VNUElURVJOTw==":
-                window.location.href = "./index.html";
+        case "MTIzLTQ1LTY3Kzg5PTEwMA==":
+                        window.location.href = "./enigma_arbol.html";
         break;
 
-        case "MTIzLTQ1LTY3Kzg5PTEwMA==":
-                window.location.href = "./enigma_arbol.html";
+        case "U0VNUElURVJOTw==":
+                window.location.href = "./index.html";
         break;
 
         default:
