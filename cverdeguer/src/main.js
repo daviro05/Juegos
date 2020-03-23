@@ -25,7 +25,7 @@ function comprobarCodigo() {
         break;
 
         case "MTIzLTQ1LTY3Kzg5PTEwMA==":
-                        window.location.href = "./enigma_arbol.html";
+                window.location.href = "./enigma_arbol.html";
         break;
 
         case "U0VNUElURVJOTw==":
