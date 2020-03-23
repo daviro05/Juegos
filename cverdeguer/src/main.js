@@ -15,17 +15,25 @@ function comprobarCodigo() {
 
     switch(encriptado){
 
-        case "QU1BWklORw==": //amazing nice
+        case "QU1BWklORw==":
         case "TklDRQ==":
-                document.getElementById("mapa").innerHTML = "<p class='correcto'>¡CÓDIGO CORRECTO!<p><br><a href='./img/270919951992.jpg' target='_blank'><img class='mtesoro' src='img/mapa.png'></a>";
+                document.getElementById("mapa").innerHTML = "<br><a href='#' target='_blank'><img class='mtesoro' src='../img/correcto.png'></a>";
         break;
 
-        case "Q09STkFNVVNB": //cornamusa
-                document.getElementById("mapa").innerHTML = "<p class='correcto'>¡CÓDIGO CORRECTO!<p><br><a href='./img/10141018AST.jpg' target='_blank'><img class='mtesoro' src='img/mapa.png'></a>";
+        case "Q09STkFNVVNB":
+                document.getElementById("mapa").innerHTML = "<br><a href='#' target='_blank'><img class='mtesoro' src='../img/correcto.png'></a>";
+        break;
+
+        case "U0VNUElURVJOTw==":
+                window.location.href = "./index.html";
+        break;
+
+        case "MTIzLTQ1LTY3Kzg5PTEwMA==":
+                window.location.href = "./enigma_arbol.html";
         break;
 
         default:
-             document.getElementById("mapa").innerHTML = "<p class='incorrecto'>¡CÓDIGO INCORRECTO!</p><br><a href='./img/intentalo.jpg' target='_blank'><img class='mtesoro' src='img/intentalo.jpg'></a>";
+             document.getElementById("mapa").innerHTML = "<br><a href='#' target='_blank'><img class='mtesoro' src='../img/incorrecto.png'></a>";
     }
 }
 

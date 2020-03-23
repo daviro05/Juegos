@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/style_comun.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <style>
+    body{
+        background: url(../img/fondo6.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+    </style>
+
+    <title>The Mistery of Cris</title>
+</head>
+<body>
+    <div class="imagen">
+            <img class="banner" src="img/banner.png">
+    </div>
+
+    <div class="codigo">
+            <img class="enigma" src="./pistas/enigma2.png">
+        <div class="centrado">
+                <input type="text" id="codigo_secreto" class="redondeado texto" placeholder="Código" onkeypress="pulsar(event)">
+        </div>
+     </div>
+
+     <div class="centrado ins">
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">INSTRUCCIONES</button>
+            <div id="demo" class="collapse instrucciones">
+                <p> Cuándo tengas la solución deberás mandar una foto a la sigueinte dirección</p>
+                <p> david.rodriguez.marco@gmail.com </p>
+                <p> Si la solución es correcta recibirás una pista </p> 
+                <p> para obtener el código...</p>
+            </div>
+            <!--<br><br><button type="button" class="btn btn-info" onclick="verCapitulos()">CAPÍTULOS</button>-->
+        </div>
+    
+</body>
+<script src="./src/main.js"></script>
+</html>
