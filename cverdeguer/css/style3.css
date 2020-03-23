@@ -13,11 +13,6 @@ body{
     margin-right: 100px;
 }
 
-.banner{
-    width: 70%;
-}
-
-
 .imagen, .codigo{
     margin-top: 50px;
     text-align: center;
@@ -346,14 +341,14 @@ body{
 
 @media all and (orientation:portrait) and (max-width: 470px){
 	.sudoku_board .cell span { font-size:16px; }
-.sudoku_board .cell .note { font-size:8px; }
-.flecha{ display: none}
+    .sudoku_board .cell .note { font-size:8px; }
+    .flecha{ display: none}
 }
 
 @media all and (orientation:portrait) and (max-width: 320px){
 	.sudoku_board .cell span { font-size:12px; }
-.sudoku_board .cell .note { font-size:8px; }
-.flecha{ display: none}
+    .sudoku_board .cell .note { font-size:8px; }
+    .flecha{ display: none}
 }
 
 @media all and (orientation:portrait) and  (max-width: 240px){

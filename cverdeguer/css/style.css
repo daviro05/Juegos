@@ -11,10 +11,6 @@ body{
     text-align: center;
 }
 
-.banner{
-    width: 70%;
-}
-
 .instrucciones{
     background-color: white;
     border:1px solid black;
@@ -50,7 +46,6 @@ body{
     width: 300px;
     height: 40px !important;
     text-align: center;
-    font-size: 2rem;
     border-radius: 5px;
   }
 
@@ -65,7 +60,6 @@ body{
   .ins{
       margin-top:30px;
   }
-
 
  .mochila{
     width: 100px;

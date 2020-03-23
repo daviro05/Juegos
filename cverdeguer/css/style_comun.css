@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'CrisFont';
+    src:  url('./fonts/fuente3.ttf') format('truetype');
+  }
+
+  .texto{
+      font-family: 'CrisFont';
+      font-size: 2.3em;
+  }
+
+
+
 .opciones {
     position: fixed;
     left: 0;
@@ -63,3 +75,23 @@
   .zoom:hover {
     transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
+
+.banner{
+    width: 70%;
+}
+
+@media all and (orientation:portrait) and (max-width: 640px){
+    .banner{width: 100%;}
+}
+
+@media all and (orientation:portrait) and (max-width: 470px){
+    .banner{width: 100%;}
+}
+
+@media all and (orientation:portrait) and (max-width: 320px){
+    .banner{width: 100%;}
+}
+
+@media all and (orientation:portrait) and  (max-width: 240px){
+    .banner{width: 100%;}
+}
