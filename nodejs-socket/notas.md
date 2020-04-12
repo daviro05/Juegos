@@ -30,11 +30,8 @@ Reiniciará el servidor por nosotros.
 
 > npm run dev
 
-#### Para especificar donde está la carpeta public, es decir, todo el contenido del front. Lo haremos con express
+### Para especificar donde está la carpeta public, es decir, todo el contenido del front. Lo haremos con express
 
-app.use(express.static('public'))
+### Usaremos un modulo llamado path para decirle donde está la carpeta public.
 
- Usaremos un modulo llamado path
-###
-
-
+app.use(express.static(path.join(__dirname,'public')));
