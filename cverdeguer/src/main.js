@@ -17,11 +17,11 @@ function comprobarCodigo() {
 
         case "QU1BWklORw==":
         case "TklDRQ==":
-                document.getElementById("mapa").innerHTML = "<br><a href='#' target='_blank'><img class='mtesoro' src='../img/correcto.png'></a>";
+                document.getElementById("mapa").innerHTML = "<br><a href='#' target='_blank'><img class='mtesoro' src='./img/correcto.png'></a>";
         break;
 
         case "Q09STkFNVVNB":
-                document.getElementById("mapa").innerHTML = "<br><a href='#' target='_blank'><img class='mtesoro' src='../img/correcto.png'></a>";
+                document.getElementById("mapa").innerHTML = "<br><a href='#' target='_blank'><img class='mtesoro' src='./img/correcto.png'></a>";
         break;
 
         case "MTIzLTQ1LTY3Kzg5PTEwMA==":
@@ -33,7 +33,7 @@ function comprobarCodigo() {
         break;
 
         default:
-             document.getElementById("mapa").innerHTML = "<br><a href='#' target='_blank'><img class='mtesoro' src='../img/incorrecto.png'></a>";
+             document.getElementById("mapa").innerHTML = "<br><a href='#' target='_blank'><img class='mtesoro' src='./img/incorrecto.png'></a>";
     }
 }
 
