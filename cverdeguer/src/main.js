@@ -29,7 +29,7 @@ function comprobarCodigo() {
         break;
 
         case "U0VNUElURVJOTw==":
-                window.location.href = "./index.html";
+                window.location.href = "./principal.html";
         break;
 
         default:
